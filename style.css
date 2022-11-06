@@ -1,91 +1,274 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    height: 100rem;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Navigation Bar */
-
-.wrapper{
-    width: 60%;
-    margin: 0 auto;
- 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 100vw;
 }
 
-nav{
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: gray;
+/* Header Style */
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/Image/anthony-riera-kylWNDQFd5A-unsplash.jpg") no-repeat center/cover
+      fixed;
+  width: 100%;
+  height: 100vh;
 }
-.nav-bar{
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 3rem;
+  color: white;
+  width: 100vw;
+  align-items: center;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-bar {
+  background-color: black;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+nav > h1:hover {
+  cursor: pointer;
+  color: lightgray;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: lightgray;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav > ul > li > a:hover {
+  color: lightgray;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+.intro h1 {
+  color: white;
+  text-transform: capitalize;
+}
+
+.intro p {
+  color: gainsboro;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* About Section style */
+
+#about {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 3rem;
+}
+
+.aboutMe {
+  width: 50%;
+}
+
+.developers-image > img {
+  width: 100%;
+  height: 27rem;
+}
+
+.developers-image {
+  width: 18rem;
+}
+
+.aboutMe > h2 {
+  margin-bottom: 10px;
+}
+
+.aboutMe > p {
+  line-height: 1.3;
+  text-align: justify;
+}
+
+#download-resume {
+  padding: 10px 1rem;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#download-resume:hover {
+  background-color: rgb(65, 63, 63);
+}
+
+/* My Skills */
+
+progress {
+  accent-color: rgba(0, 0, 0, 0.7);
+}
+
+#skills {
+  padding: 5rem 3rem 3rem 3rem;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+  width: 57rem;
+}
+
+.skills-category img {
+  width: 5rem;
+  display: block;
+  margin: 10px auto;
+}
+
+.skills-category {
+  background: #202020;
+  padding: 2rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+.skills-category:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+  background-color: #383535;
+}
+
+.bootstrap svg {
+  width: 5rem;
+  display: block;
+  margin: 10px auto;
+}
+
+.nextjs svg {
+  width: 5rem;
+  display: block;
+  margin: 10px auto;
+  height: 5rem;
+}
+
+.navbarOffsetMargin {
+  padding-top: 45px;
+}
+
+@media screen and (max-width: 810px) {
+  nav ul li {
+    font-size: 15px;
+  }
+
+  .aboutMe p {
+    font-size: 14px;
+  }
+
+  .developers-image > img {
+    height: 28rem;
+  }
+
+  .skills-container {
+    width: 45rem;
+  }
+}
+
+.menu {
+  display: none;
+}
+.close {
+  display: none;
+  position: absolute;
+  right: 33px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .skills-container {
+    display: block;
     width: 100%;
-    display: flex;
-    justify-content: center;  
-    align-items: center; 
-}
+  }
 
-.nav-bar > .nav-item > a{
-    text-decoration: none;
-    padding: 15px;
-    color: white;
-
-    
-}
-.nav-item{
-    width: 50%;
-    display: flex;
-    justify-content: end;
-}
-.nav-bar > .nav-item > a:hover{
-    background-color: rgb(214, 212, 212);
-    transition: 0.3s;
-    color: black;
-}
-
-.logo {
-    margin-right: 42%;
-}
-
-.nav-bar > .logo > img{
-    width: 3rem;
-    height: auto;
-    border-radius: 50%;
+  .menu {
+    display: block;
+    width: 10px;
     cursor: pointer;
-   
-}
+  }
 
-.Web-development-banner{
-    width: 100%;
-    height: 38rem;
-    background-color: gray;
-    background-image: url(https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-}
-
-.Web-development-banner > button{
-    padding: 18px 3rem;
-    background-color: orange;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 10px;
-    font-size: 1.3rem;
+  #nav-link {
     position: absolute;
-    bottom: 8rem;
-    left: 19%;
-}
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background-color: #383535;
+    padding: 3rem;
+    transition: 0.5s;
+  }
 
-button:hover{
-    background-color: rgb(214, 212, 212);
-    color: black;
-    transition: 0.3s;
-    cursor: pointer;
-}
+  #nav-link li {
+    float: none;
+  }
 
+  #about {
+    display: block;
+  }
+
+  .aboutMe {
+    width: 100%;
+  }
+
+  .developers-image {
+    width: 100%;
+  }
+}
