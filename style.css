@@ -204,6 +204,10 @@ progress {
   padding-top: 45px;
 }
 
+/* nav a.active {
+  color: gray;
+} */
+
 @media screen and (max-width: 810px) {
   nav ul li {
     font-size: 15px;
