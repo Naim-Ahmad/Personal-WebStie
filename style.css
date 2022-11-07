@@ -204,9 +204,19 @@ progress {
   padding-top: 45px;
 }
 
-/* nav a.active {
+nav a.active {
   color: gray;
-} */
+}
+
+nav a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  margin: 0 auto;
+  transition: 0.5s;
+}
 
 @media screen and (max-width: 810px) {
   nav ul li {
