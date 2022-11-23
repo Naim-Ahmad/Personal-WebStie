@@ -11,7 +11,6 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  width: 98vw;
 }
 
 /* Header Style */
@@ -240,6 +239,70 @@ section#works > h2 {
   border: 2px solid tomato;
   width: 25%;
   margin: 1rem;
+}
+.progress-label {
+  text-align: start;
+  font-size: 15px;
+  margin-top: 18px;
+}
+
+.progress-label::after {
+  content: "90%";
+  position: relative;
+  left: 62%;
+}
+
+.progress > progress {
+  opacity: 0;
+}
+
+.progress {
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 6px;
+  height: 10px;
+  position: relative;
+  top: 10px;
+  overflow: hidden;
+}
+
+.progress::before {
+  content: "";
+  background: #f16529;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  animation: progress-animation 1s ease-in forwards;
+}
+
+@keyframes progress-animation {
+  to {
+    width: 90%;
+  }
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.progress-label::after {
+  counter-reset: num var(--num);
+  content: counter(num) "%";
+  position: relative;
+  top: 0;
+  right: 0;
+  color: white;
+  animation: progress-text 1s ease-in forwards;
+}
+
+@keyframes progress-text {
+  to {
+    --num: 75;
+  }
 }
 
 /* Media query for Tablet */
