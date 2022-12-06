@@ -320,6 +320,10 @@ section#works > h2 {
     transition: 0.5s;
   }
 
+  .navbar-expand .navbar-nav {
+    flex-direction: column;
+  }
+
   #nav-link li {
     float: none;
   }
