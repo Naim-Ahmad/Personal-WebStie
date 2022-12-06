@@ -1,7 +1,7 @@
 const navBar = document.getElementById("nav-bar");
 const navPos = navBar.getBoundingClientRect("nav-bar").top;
 
-let navbarLinks = document.querySelectorAll("nav a");
+let navbarLinks = document.querySelectorAll("nav ul li a");
 
 window.onload = () => {
   main();
@@ -11,9 +11,9 @@ function main() {
   window.addEventListener("scroll", (event) => {
     let scrollPos = window.scrollY;
     if (scrollPos > navPos) {
-      navBar.classList.add("nav-bar");
+      navBar.classList.add("bg-dark");
     } else {
-      navBar.classList.remove("nav-bar");
+      navBar.classList.remove("bg-dark");
     }
 
     navbarLinks.forEach((link) => {

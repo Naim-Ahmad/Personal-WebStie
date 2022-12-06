@@ -23,37 +23,6 @@ header {
   height: 100vh;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 3rem;
-  color: white;
-  width: 100vw;
-  align-items: center;
-  transition: 0.5s;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-}
-
-.nav-bar {
-  background-color: black;
-  box-shadow: 0px 0px 5px 0px black;
-}
-
-nav > h1:hover {
-  cursor: pointer;
-  color: lightgray;
-}
-
-nav ul {
-  list-style-type: none;
-}
-nav ul li {
-  float: left;
-  padding: 10px;
-}
-
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -130,21 +99,6 @@ nav > ul > li > a:hover {
   text-align: justify;
 }
 
-#download-resume {
-  padding: 10px 1rem;
-  margin-top: 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-#download-resume:hover {
-  background-color: rgb(65, 63, 63);
-}
-
 /* My Skills */
 
 progress {
@@ -203,16 +157,16 @@ progress {
   padding-top: 45px;
 }
 
-nav a.active {
-  color: gray;
+nav ul li a.active {
+  color: white;
 }
 
-nav a.active::after {
+nav ul li a.active::after {
   content: "";
   display: block;
   width: 100%;
   height: 2px;
-  background-color: gray;
+  background-color: white;
   margin: 0 auto;
   transition: 0.5s;
 }
@@ -348,6 +302,11 @@ section#works > h2 {
     display: block;
     width: 10px;
     cursor: pointer;
+  }
+  nav ul li a::after {
+    content: "";
+    display: none;
+    visibility: hidden;
   }
 
   #nav-link {
