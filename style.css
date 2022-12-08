@@ -13,6 +13,15 @@ body {
   font-size: 18px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
 /* Header Style  starts here*/
 
 header {
@@ -163,7 +172,7 @@ nav ul li a.active::after {
 
 .progress-bar {
   width: 0%;
-  transition: 2s;
+  transition: 1s;
 }
 
 /* Skills section style ends here */
