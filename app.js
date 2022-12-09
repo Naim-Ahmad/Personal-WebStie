@@ -5,18 +5,13 @@ const navPos = navBar.getBoundingClientRect("nav-bar").top;
 
 let navbarLinks = document.querySelectorAll("nav ul li a");
 
-const display = document.querySelectorAll(".display");
+const displays = document.querySelectorAll(".display");
 
 const progressBar = document.querySelectorAll(".progress-bar");
 
-window.onscroll = () => {
-  progressBar.forEach((prog) => {
-    let scrollPos = window.scrollY;
-    // console.log(prog.offsetTop);
-  });
-};
+const interval = 1000;
 
-console.log(progressBar);
+let isStartCount = false;
 
 // windows onload handler
 
@@ -40,8 +35,9 @@ function progressAnimation() {
   let scrollPos = window.scrollY;
 
   progressBar.forEach((prog) => {
-    if (scrollPos + 650 > prog.offsetTop) {
+    if (scrollPos + 675 > prog.offsetTop) {
       showProgress(prog);
+      startCounter();
     } else {
       hideProgress(prog);
     }
@@ -49,6 +45,23 @@ function progressAnimation() {
 }
 
 // Utility Function
+function startCounter() {
+  if (!isStartCount)
+    displays.forEach((display) => {
+      let startValue = 1;
+      const endValue = parseInt(display.getAttribute("data-counter"));
+      const duration = Math.floor(interval / endValue);
+      const counter = setInterval(() => {
+        startValue += 1;
+        display.textContent = startValue + "%";
+
+        if (startValue === endValue) {
+          clearInterval(counter);
+          isStartCount = true;
+        }
+      }, duration);
+    });
+}
 
 function showProgress(prog) {
   const value = prog.ariaValueNow;

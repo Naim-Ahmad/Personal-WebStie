@@ -20,6 +20,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Header Style  starts here*/
