@@ -336,6 +336,10 @@ section#works > h2 {
     font-size: 20px;
     margin: 2px;
   }
+  #nav-bar {
+    padding-right: 2rem !important;
+    padding-left: 1rem !important;
+  }
 }
 
 /* Media query for Android ends here*/
