@@ -223,11 +223,15 @@ section#works > h2 {
 /* works section style ends here */
 
 /* footer style starts here*/
-.social-link i {
+.social-link a {
   display: inline-block;
   margin: 10px;
-  font-size: 1.5rem;
+  color: white;
 }
+
+/* .social-link i:hover{
+  cursor: pointer;
+} */
 
 /* Media query for Tablet starts here*/
 
