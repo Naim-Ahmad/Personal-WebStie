@@ -64,7 +64,8 @@ function startCounter() {
 }
 
 function showProgress(prog) {
-  const value = prog.ariaValueNow;
+  const value = prog.getAttribute("aria-valuenow");
+  console.log(value);
   prog.style.width = `${value}%`;
   prog.style.opacity = "1";
 }
