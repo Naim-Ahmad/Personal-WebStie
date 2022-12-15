@@ -61,11 +61,12 @@ function hide() {
 }
 
 // Contact form Send functionality
+;(function () {
+  emailjs.init('M16bWlzMeuACVCees')
+})()
 
 contact_form.addEventListener('submit', function (event) {
-  event.preventDefault()(function () {
-    emailjs.init('M16bWlzMeuACVCees')
-  })()
+  event.preventDefault()
   const content = {
     name: document.getElementById('name').value,
     email: document.getElementById('email').value,
