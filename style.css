@@ -284,9 +284,15 @@ section#works > h2 {
   color: black;
   font-weight: 1000;
   position: absolute;
-  top: 5px;
-  left: -23px;
+  top: 0px;
+  left: -12%;
+  margin: auto;
   z-index: -1;
+}
+
+.service-div {
+  width: 34rem;
+  max-width: 100%;
 }
 
 .service-body h2 {
@@ -440,6 +446,33 @@ section#works > h2 {
     padding-right: 2rem !important;
     padding-left: 1rem !important;
   }
+
+  .services::before {
+    font-size: 2.1em !important;
+    display: inline-block !important;
+    margin: auto !important;
+    position: absolute !important;
+    top: 47px !important;
+    left: 21px !important;
+  }
 }
 
 /* Media query for Android ends here*/
+
+@media screen and (max-width: 1277px) {
+  .service-wrapper {
+    width: 39rem;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .services::before {
+    font-size: 3em;
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+  }
+}
