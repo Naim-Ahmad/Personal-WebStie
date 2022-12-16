@@ -21,13 +21,14 @@ h5,
 h6 {
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Header Style  starts here*/
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./Image/anthony-riera-kylWNDQFd5A-unsplash.jpg") no-repeat center/cover
+    url('./Image/anthony-riera-kylWNDQFd5A-unsplash.jpg') no-repeat center/cover
       fixed;
   width: 100%;
   height: 100vh;
@@ -41,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-  content: "";
+  content: '';
   display: block;
   width: 0%;
   height: 2px;
@@ -67,7 +68,7 @@ nav ul li a.active {
 }
 
 nav ul li a.active::after {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 2px;
@@ -201,11 +202,89 @@ section#works > h2 {
   box-shadow: 1px 1px 4px 1px black;
 }
 
+/* services section style starts here */
+
+#service > h1 {
+  padding-top: 6rem !important;
+}
+
+.service-img {
+  width: 62px;
+}
+.circle {
+  border: 2px solid lightgray;
+  height: 110px;
+  border-radius: 50%;
+  width: 110px;
+  position: relative;
+}
+.service-item:hover .circle {
+  transition: 2s;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle::after,
+.circle::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  border-radius: 50%;
+  position: absolute;
+  top: 39%;
+}
+
+.circle::after {
+  left: -9%;
+}
+
+.circle::before {
+  right: -9%;
+}
+.circle .dot2 {
+  left: 93%;
+}
+
+.service-img {
+  position: absolute;
+  top: 18%;
+  left: 21%;
+}
+
+.service-icon {
+  position: relative;
+  width: 112px;
+}
+
+.service-item {
+  width: 304px;
+  height: 329px;
+}
+
+.service-body h2 {
+  font-size: x-large;
+  text-align: center;
+}
+.service-body p {
+  font-size: medium;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 /* Testimonials style starts here */
 
 .testimonials {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./Image/andre-noboa-8iZEIhA_5ao-unsplash.jpg");
+    url('./Image/andre-noboa-8iZEIhA_5ao-unsplash.jpg');
   background-position: top center;
   background-size: cover;
   color: white;
@@ -284,7 +363,7 @@ section#works > h2 {
     cursor: pointer;
   }
   nav ul li a::after {
-    content: "";
+    content: '';
     display: none;
     visibility: hidden;
   }
