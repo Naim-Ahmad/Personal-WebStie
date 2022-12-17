@@ -280,6 +280,7 @@ section#portfolio > h2 {
 
 .services::before {
   content: 'SERVICES';
+  top: 25% !important;
 }
 
 .service-div {
@@ -342,9 +343,6 @@ section#portfolio > h2 {
     height: 28rem;
   }
 
-  /* .skills-container {
-    width: 45rem;
-  } */
   .footer-name {
     display: none;
     visibility: hidden;
@@ -452,6 +450,11 @@ section#portfolio > h2 {
   }
 }
 
+.contactMe {
+  text-shadow: 0px 0px 2px black;
+  color: white;
+}
+
 /* Media query for Android ends here*/
 
 @media screen and (max-width: 1177px) {
@@ -468,12 +471,20 @@ section#portfolio > h2 {
   .skills-txt {
     font-size: 100% !important;
   }
+
+  .skills-txt::before {
+    top: 0% !important;
+  }
   .my-work-txt {
     font-size: 100% !important;
   }
 
   .my-work-txt::before {
-    left: -20% !important;
+    left: -28% !important;
+  }
+
+  .services {
+    font-size: 100% !important;
   }
 }
 
