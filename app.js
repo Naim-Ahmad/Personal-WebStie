@@ -127,7 +127,6 @@ function navBarActive() {
 
   navbarLinks.forEach((link) => {
     let section = document.querySelector(link.hash)
-    console.dir(link)
 
     if (
       scrollPos + 300 > section.offsetTop &&

@@ -23,63 +23,65 @@
   <body>
     <!-- Header section starts here-->
     <header id="home">
-      <nav id="nav-bar" class="navbar navbar-expand fixed-top navbar-dark px-5">
-        <a href="#" class="navbar-brand fw-bold fs-3">Naim Ahmad</a>
-        <ul id="nav-link" class="navbar-nav ms-auto">
-          <li class="nalg-v col-md-6item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nalg-v col-md-6item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nalg-v col-md-6item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nalg-v col-md-6item">
-            <a class="nav-link" href="#works">Works</a>
-          </li>
-          <li class="nalg-v col-md-6item">
-            <a class="nav-link" href="#service">Services</a>
-          </li>
-          <li class="nalg-v col-md-6item">
-            <a class="nav-link" href="#contact">Contact Me</a>
-          </li>
-        </ul>
-        <div class="menu ms-auto" onclick="showHide()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            height="32px"
-            id="Layer_1"
-            style="enable-background: new 0 0 32 32"
-            version="1.1"
-            viewBox="0 0 32 32"
-            width="25px"
-            xml:space="preserve"
-            fill="white"
-          >
-            <path
-              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
-            />
-          </svg>
-        </div>
-        <div class="close" id="close" onclick="hide()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            height="512px"
-            id="Layer_1"
-            style="enable-background: new 0 0 512 512"
-            version="1.1"
-            viewBox="0 0 512 512"
-            width="20px"
-            xml:space="preserve"
-            fill="white"
-          >
-            <path
-              d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
-            />
-          </svg>
+      <nav id="nav-bar" class="navbar navbar-expand fixed-top navbar-dark">
+        <div class="my-container d-flex justify-content-between px-4">
+          <a href="#" class="navbar-brand fw-bold fs-3">Naim Ahmad</a>
+          <ul id="nav-link" class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+          <div class="menu ms-auto" onclick="showHide()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              height="32px"
+              id="Layer_1"
+              style="enable-background: new 0 0 32 32"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="25px"
+              xml:space="preserve"
+              fill="white"
+            >
+              <path
+                d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+              />
+            </svg>
+          </div>
+          <div class="close" id="close" onclick="hide()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              height="512px"
+              id="Layer_1"
+              style="enable-background: new 0 0 512 512"
+              version="1.1"
+              viewBox="0 0 512 512"
+              width="20px"
+              xml:space="preserve"
+              fill="white"
+            >
+              <path
+                d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
+              />
+            </svg>
+          </div>
         </div>
       </nav>
 
@@ -95,19 +97,19 @@
     <main>
       <!-- About section starts here -->
       <section id="about">
-        <div class="container-lg">
-          <div class="row m-2">
-            <div class="col-lg-4 col-md-4">
+        <div class="my-container">
+          <div class="row m-2 m-auto">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <div class="mb-3">
                 <img
-                  src="/Image/naim-ahmad-picture-min.jpg"
+                  src="./Image/naim-ahmad-picture-min.jpg"
                   alt="developer's image"
                   class="rounded img-fluid"
                 />
               </div>
             </div>
 
-            <div class="col-lg-8 col-md-4">
+            <div class="col-lg-8 col-md-8 col-sm-8">
               <h2 class="text-uppercase fw-bold mb-3">About me</h2>
               <p>
                 Hi! My name is Naim Ahmad. Welcome to my personal page that I’ve
@@ -137,11 +139,15 @@
       <!-- skills section starts here -->
 
       <section id="skills">
-        <h2 class="my-5 text-uppercase fw-bold">My Skills</h2>
+        <div class="my-container">
+          <div>
+            <h2 class="text-uppercase fw-bold commonBeforeTxt skills-txt">
+              I'm Expert in these
+            </h2>
+          </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
+          <div class="row my-row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="html skills-category">
                 <h3>HTML5</h3>
                 <img
@@ -167,7 +173,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="css skills-category">
                 <h3>CSS3</h3>
                 <img
@@ -193,7 +199,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="javascript skills-category">
                 <h3>JavaScript</h3>
                 <img
@@ -218,7 +224,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="bootstrap skills-category">
                 <h3>Bootstrap</h3>
                 <div class="mb-3">
@@ -252,7 +258,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="react skills-category">
                 <h3>React</h3>
                 <img
@@ -277,7 +283,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="nextjs skills-category">
                 <h3>Next js</h3>
                 <svg
@@ -323,169 +329,178 @@
 
       <!-- Work section start here -->
 
-      <section id="works">
-        <h2 class="mb-4">My Works</h2>
-
-        <ul
-          class="nav nav-tabs justify-content-center"
-          id="myTab"
-          role="tablist"
-        >
-          <li class="nalg-v col-md-6item" role="presentation">
-            <button
-              class="nav-link active"
-              id="all-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#all-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="all-tab-pane"
-              aria-selected="true"
-            >
-              All
-            </button>
-          </li>
-          <li class="nalg-v col-md-6item" role="presentation">
-            <button
-              class="nav-link"
-              id="web-design"
-              data-bs-toggle="tab"
-              data-bs-target="#web-design-pane"
-              type="button"
-              role="tab"
-              aria-controls="web-design-pane"
-              aria-selected="false"
-            >
-              Web Design
-            </button>
-          </li>
-          <li class="nalg-v col-md-6item" role="presentation">
-            <button
-              class="nav-link"
-              id="web-app"
-              data-bs-toggle="tab"
-              data-bs-target="#web-app-pane"
-              type="button"
-              role="tab"
-              aria-controls="web-app-pane"
-              aria-selected="false"
-            >
-              Web App
-            </button>
-          </li>
-        </ul>
-
-        <div class="tab-content container" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="all-tab-pane"
-            role="tabpanel"
-            aria-labelledby="all-tab"
-            tabindex="0"
+      <section id="portfolio">
+        <div class="my-container">
+          <div class="service-div m-auto text-center mb-4">
+            <h2 class="mb-4 text-center my-work-txt commonBeforeTxt">
+              My Latest Works
+            </h2>
+            <p class="fs-6" style="color: gray">
+              I love to Work with Passion and Dedication. Maintaining quality
+              and client satisfaction is my main motto.
+            </p>
+          </div>
+          <ul
+            class="nav nav-tabs justify-content-center"
+            id="myTab"
+            role="tablist"
           >
-            <div class="d-flex flex-wrap justify-content-center gap-2">
-              <div class="item">
-                <img
-                  class="img-fluid"
-                  src="./Image/eduford.png"
-                  alt="eduford project image"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="./Image/w3project.png"
-                  alt="w3 schools project"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="./Image/colorpicker.png"
-                  alt="Color Picker"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="./Image/weather app.png"
-                  alt="Weather Application"
-                  class="img-fluid mt-5"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="./Image/analog-clock.png"
-                  alt="analog-clock"
-                  class="img-fluid"
-                />
-                <p class="fw-bold text-center fs-6">
-                  This is the first watch I made
-                </p>
-              </div>
-              <div class="item">
-                <img
-                  src="./Image/raffle Draw.png"
-                  alt="raffle draw application"
-                  class="img-fluid mt-5"
-                />
+            <li class="" role="presentation">
+              <button
+                class="nav-link active"
+                id="all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#all-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="all-tab-pane"
+                aria-selected="true"
+              >
+                All
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="nav-link"
+                id="web-design"
+                data-bs-toggle="tab"
+                data-bs-target="#web-design-pane"
+                type="button"
+                role="tab"
+                aria-controls="web-design-pane"
+                aria-selected="false"
+              >
+                Web Design
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="nav-link"
+                id="web-app"
+                data-bs-toggle="tab"
+                data-bs-target="#web-app-pane"
+                type="button"
+                role="tab"
+                aria-controls="web-app-pane"
+                aria-selected="false"
+              >
+                Web App
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="all-tab-pane"
+              role="tabpanel"
+              aria-labelledby="all-tab"
+              tabindex="0"
+            >
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <div class="item">
+                  <img
+                    class="img-fluid"
+                    src="./Image/eduford.png"
+                    alt="eduford project image"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./Image/w3project.png"
+                    alt="w3 schools project"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./Image/colorpicker.png"
+                    alt="Color Picker"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./Image/weather app.png"
+                    alt="Weather Application"
+                    class="img-fluid mt-5"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./Image/analog-clock.png"
+                    alt="analog-clock"
+                    class="img-fluid"
+                  />
+                  <p class="fw-bold text-center fs-6">
+                    This is the first watch I made
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="./Image/raffle Draw.png"
+                    alt="raffle draw application"
+                    class="img-fluid mt-5"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="web-design-pane"
-            role="tabpanel"
-            aria-labelledby="web-design"
-            tabindex="0"
-          >
-            <div class="row justify-content-center">
-              <div class="item">
-                <img
-                  class="img-fluid"
-                  src="./Image/eduford.png"
-                  alt="eduford project image"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="./Image/w3project.png"
-                  alt="w3 schools project"
-                  class="img-fluid"
-                />
+            <div
+              class="tab-pane fade"
+              id="web-design-pane"
+              role="tabpanel"
+              aria-labelledby="web-design"
+              tabindex="0"
+            >
+              <div class="row justify-content-center">
+                <div class="item">
+                  <img
+                    class="img-fluid"
+                    src="./Image/eduford.png"
+                    alt="eduford project image"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./Image/w3project.png"
+                    alt="w3 schools project"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="web-app-pane"
-            role="tabpanel"
-            aria-labelledby="web-app"
-            tabindex="0"
-          >
-            <div class="row justify-content-center">
-              <div class="item">
-                <img
-                  src="./Image/weather app.png"
-                  alt="Weather Application"
-                  class="img-fluid mt-5"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="./Image/analog-clock.png"
-                  alt="analog-clock"
-                  class="img-fluid"
-                />
-                <p class="fw-bold text-center fs-6">
-                  This is the first watch I made
-                </p>
-              </div>
-              <div class="item">
-                <img
-                  src="./Image/colorpicker.png"
-                  alt="Color Picker"
-                  class="img-fluid"
-                />
+            <div
+              class="tab-pane fade"
+              id="web-app-pane"
+              role="tabpanel"
+              aria-labelledby="web-app"
+              tabindex="0"
+            >
+              <div class="row justify-content-center">
+                <div class="item">
+                  <img
+                    src="./Image/weather app.png"
+                    alt="Weather Application"
+                    class="img-fluid mt-5"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./Image/analog-clock.png"
+                    alt="analog-clock"
+                    class="img-fluid"
+                  />
+                  <p class="fw-bold text-center fs-6">
+                    This is the first watch I made
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="./Image/colorpicker.png"
+                    alt="Color Picker"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -496,16 +511,18 @@
 
       <!-- Services Section starts here -->
 
-      <section id="service" class="bg-black pt-5">
+      <section id="service" class="bg-black pt-3">
         <div class="text-center m-auto service-div">
-          <h1 class="text-white text-center text-capitalize services">
+          <h1
+            class="text-white text-center text-capitalize services commonBeforeTxt"
+          >
             What I do for clients
           </h1>
-          <small style="color: gray">
+          <p class="fs-6" style="color: gray">
             Build and Develop websites with a high professional attitude and
             punctuality. With every line of code, I Strive to make the web a
             beautiful place.
-          </small>
+          </p>
         </div>
         <div
           class="service-wrapper justify-content-center align-items-center d-flex m-auto flex-wrap gap-3 py-5"
@@ -522,7 +539,7 @@
               </div>
             </div>
             <div class="service-body">
-              <h2 class="my-3 text-capitalize">Web Design</h2>
+              <h2 class="my-3 text-capitalize">PSD to HTML</h2>
               <p class="text-justify">
                 Design Sites as Clients Project Requirement. Love to work with
                 Perfection. Try to Design the Site as like the design template
@@ -555,12 +572,12 @@
                 <img
                   src="./Image/5355692_code_coding_development_programming_web_icon.png"
                   class="img-fluid"
-                  alt="web development"
+                  alt="Make Web Dynamic"
                 />
               </div>
             </div>
             <div class="service-body">
-              <h2 class="my-3 text-capitalize">Web Development</h2>
+              <h2 class="my-3 text-capitalize">Build Dynamic Sites</h2>
               <p>
                 Make fully functional dynamic sites , implement updated
                 features, make attractive look.
@@ -572,18 +589,17 @@
               <div class="circle"></div>
               <div class="service-img">
                 <img
-                  src="./Image/male-services-support-icon.svg"
+                  src="./Image/app-development.png"
                   class="img-fluid"
                   alt="responsive design"
                 />
               </div>
             </div>
             <div class="service-body">
-              <h2 class="my-3 text-capitalize">24 / Support</h2>
+              <h2 class="my-3 text-capitalize">Web Development</h2>
               <p>
-                One way to categorize the activities is in terms of the
-                professional’s area of expertise such as competitive analysis,
-                corporate strategy.
+                Work with previously built sites, and modify them as client
+                requirements. Add new functionality and update site
               </p>
             </div>
           </div>
@@ -624,7 +640,9 @@
           </div>
           <div class="carousel-inner">
             <div class="container my-container-style">
-              <h1 class="my-5">testimonials</h1>
+              <h1 class="my-review-txt">
+                TESTIMONIALS
+              </h1>
               <div><i class="fa-solid fa-quote-left fa-3x mb-3"></i></div>
               <div class="carousel-item active">
                 <figure>
@@ -763,7 +781,7 @@
       </div>
       <p class="fs-4 fw-bold footer-name">Naim Ahmad</p>
       <div>
-        <small>&copy; Copy Right And Designed by Name Ahmad</small>
+        <p class="fs-6">&copy; Copy Right And Designed by Name Ahmad</p class="fs-6">
       </div>
     </footer>
 
