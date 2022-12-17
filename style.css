@@ -459,8 +459,8 @@ section#portfolio > h2 {
 
 @media screen and (max-width: 1177px) {
   .service-wrapper {
-    width: 39rem;
-    max-width: 90%;
+    width: 95%;
+    max-width: 39rem;
   }
 }
 
