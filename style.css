@@ -38,8 +38,8 @@ h6 {
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('./Image/anthony-riera-kylWNDQFd5A-unsplash.jpg') no-repeat center/cover
-      fixed;
+    url('./Images/anthony-riera-kylWNDQFd5A-unsplash.jpg') no-repeat
+      center/cover fixed;
   width: 100%;
   height: 100vh;
 }
@@ -304,7 +304,7 @@ section#portfolio > h2 {
 
 .testimonials {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('./Image/andre-noboa-8iZEIhA_5ao-unsplash.jpg');
+    url('./Images/andre-noboa-8iZEIhA_5ao-unsplash.jpg');
   background-position: top center;
   background-size: cover;
   color: white;
